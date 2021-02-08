@@ -63,6 +63,13 @@ This extension converts text-input city field to the select dropdown in checkout
 
 ![Magento 2 City Dropdown in New Order Shipping/Billing Address](https://www.magepsycho.com/media/catalog/product/2/5/25-m2-region-city-manager-admin-new-order-shipping-billing-city-dropdown.png)
 
+#### Search Option in Dropdown
+The city dropdown is also configurable to have the search box inside the dropdown that can be very handy to the users if the list is big.
+
+![Magento 2 City Dropdown with Search Option](https://www.magepsycho.com/media/catalog/product/2/0/20.2.1-m2-region-city-manager-frontend-checkout-city-dropdown-with-search.png)
+
+![Magento 2 City Dropdown with Search Option - Multilocale](https://www.magepsycho.com/media/catalog/product/2/0/20.2.2-m2-region-city-manager-frontend-checkout-city-dropdown-with-search-arabic-locale.png)
+
 Having city as a dropdown field can have the following advantages for the store:
 
 * Eliminates typos, reduces the entry of incorrect addresses
@@ -108,6 +115,24 @@ php bin/magento setup:static-content:deploy
 * [Frontend Demo](http://m2default.mage-expo.com/)
 
 ## Changelog
+**Version 1.0.3 (2021-02-05)**
+    
+* Added searchable option for city dropdown
+
+**Version 1.0.2 (2020-11-20)**
+    
+* Fixed `di:compile` issue
+* Added Tested compatibility against Magento `v2.4.1`
+
+**Version 1.0.1 (2020-09-19)**
+    
+* Fixed "Trying to access array offset on value of type bool" issue in `PHP 7.4`
+* Fixed Fixed city data not copying issue when guest user is converted to customer
+* Fixed Fixed the table prefix issue in regions & cities import
+* Fixed Fixed the ACL issue
+* Fixed Fixed the city sorting issue in drodpdown
+* Added Tested compatibility against Magento `v2.4.0`
+
 **Version 1.0.0 (2020-07-20)**
     
 * Initial Release.
